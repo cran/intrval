@@ -1,0 +1,10 @@
+1b554737cc506f5d32547867ec4b3be2 *DESCRIPTION
+29aa5ea8fff2d8c0dce610789da92be9 *NAMESPACE
+1a9b4146d596ae40173edaec1f43726f *R/intrnals.R
+46e2fdce025d9423afb6c74a3712d427 *R/intrval_types.R
+ecce4ae56e4f1ee0d40ac884e78b0a45 *R/specials.R
+a065a52a1f91ff93a815e5c278073abb *build/partial.rdb
+c344c739a95c792ce7a67ecf63c9c452 *man/intrval-package.Rd
+dc24b4cd28bc3bd3d79e4040faacd2d1 *man/intrval.Rd
+6e261cdbeb4db66e7e8f32f65d4c08ed *man/ni.Rd
+802649dd340237683dc4948b2a6af0a5 *man/ovrlap.Rd
