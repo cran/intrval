@@ -1,10 +1,10 @@
-1b554737cc506f5d32547867ec4b3be2 *DESCRIPTION
-29aa5ea8fff2d8c0dce610789da92be9 *NAMESPACE
-1a9b4146d596ae40173edaec1f43726f *R/intrnals.R
+7e82de3be4152603af9e57fa2e9c291c *DESCRIPTION
+5e51ac1659deba311cf0997e4cdfb5c2 *NAMESPACE
+1a151c1dc5990bebf74d98d5c44e076b *R/intrnals.R
 46e2fdce025d9423afb6c74a3712d427 *R/intrval_types.R
-ecce4ae56e4f1ee0d40ac884e78b0a45 *R/specials.R
-a065a52a1f91ff93a815e5c278073abb *build/partial.rdb
+80f754ab6dbb1f8c98ddc1406e7b4019 *R/specials.R
+d53231b959124806fb039e9b96a2f59b *build/partial.rdb
 c344c739a95c792ce7a67ecf63c9c452 *man/intrval-package.Rd
-dc24b4cd28bc3bd3d79e4040faacd2d1 *man/intrval.Rd
+bf579291dff3b19ea127614d194ec387 *man/intrval.Rd
 6e261cdbeb4db66e7e8f32f65d4c08ed *man/ni.Rd
-802649dd340237683dc4948b2a6af0a5 *man/ovrlap.Rd
+fa2313e66f14cebf02d7cb46899c2149 *man/ovrlap.Rd
