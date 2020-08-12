@@ -1,4 +1,5 @@
 \name{intrval}
+\alias{intrval}
 \alias{interval}
 \alias{\%[]\%}
 \alias{\%[)\%}
@@ -76,7 +77,6 @@ least on ordinal scale (e.g. dates), see Examples.
 Note: interval endpoints are sorted internally thus ensuring the condition
 a <= b is not necessary.
 
-Values of \code{x} are compared to \code{interval} endpoints.
 The \code{type} argument or the specification of the special function
 determines the open (\code{(} and \code{)}) or
 closed (\code{[} and \code{]}) endpoints and relations.
@@ -100,13 +100,13 @@ This implies 2 conditional logical evaluations
 instead of treating it as a single 3-level ordered factor.
 }
 \value{
-A logical vector, indicating if \code{x} is in the interval specified.
+A logical vector, indicating if \code{x} is in the specified interval.
 Values are \code{TRUE}, \code{FALSE}, or \code{NA}
 (when any of the 3 values (\code{x} or endpoints in \code{interval})
-is \code{NA}).
+are \code{NA}).
 
 The helper function \code{intrval_types}
-can be used to understand and visualize the operators effects.
+can be used to understand and visualize the operators' effects.
 It returns a matrix explaining the properties of the operators.
 }
 \author{
@@ -120,8 +120,10 @@ interval-to-interval comparisons.
 
 See \code{\link{factor}} for the behavior with factor arguments.
 See also \code{\link{\%in\%}} for value matching
-and \code{\link{\%\%}} for negated value matching
+and \code{\link{\%ni\%}} for negated value matching
 for factors.
+
+See \code{\link{Syntax}} for operator precedence.
 }
 \examples{
 ## motivating example from example(lm)
@@ -176,6 +178,12 @@ f <- as.POSIXlt(dt)$hour \%[]\% c(0, 11)
 plot(sin(x) ~ dt, type="l", col="grey",
     main = "Filtering date/time objects")
 points(sin(x) ~ dt, pch = 19, col = f + 1)
+
+## watch precedence
+(2 * 1:5) \%[]\% (c(2, 3) * 2)
+2 * 1:5 \%[]\% (c(2, 3) * 2)
+(2 * 1:5) \%[]\% c(2, 3) * 2
+2 * 1:5 \%[]\% c(2, 3) * 2
 }
 \keyword{manip}
 \keyword{logic}

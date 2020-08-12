@@ -1,11 +1,11 @@
 Package: intrval
 Type: Package
 Title: Relational Operators for Intervals
-Version: 0.1-1
-Date: 2017-01-21
+Version: 0.1-2
+Date: 2020-08-11
 Author: Peter Solymos
 Maintainer: Peter Solymos <solymos@ualberta.ca>
-Description: Evaluating if values 
+Description: Evaluating if values
   of vectors are within different open/closed intervals
   (`x %[]% c(a, b)`), or if two closed
   intervals overlap (`c(a1, b1) %[]o[]% c(a2, b2)`).
@@ -16,6 +16,6 @@ BugReports: https://github.com/psolymos/intrval/issues
 LazyLoad: yes
 LazyData: true
 NeedsCompilation: no
-Packaged: 2017-01-22 05:37:38 UTC; root
+Packaged: 2020-08-12 05:29:17 UTC; Peter
 Repository: CRAN
-Date/Publication: 2017-01-22 12:38:33
+Date/Publication: 2020-08-12 10:00:17 UTC
